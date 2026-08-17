@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        component: [ingest, vision, classifier, serve]
+        component: [ingest, preprocess, train, classifier, serve-preprocess, serve-embedder, serve-svm]
 
     permissions:
       contents: read
